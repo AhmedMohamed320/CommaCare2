@@ -3,25 +3,50 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+    --color-blue-1: #1e90ff;
+    --color-main-1: #00b451;
+    --color-main-2: #10bc3bd7;
+    --color-main-3: #20ff021c;
+    --color-light-1: #ffffff;
+    --color-light-2: #f5f8fa;
+    --color-dark-1: #000000;
+    --color-dark-2: #00000039;
+    --color-dark-3: #29272b;
+    --color-red-1: #e55a55;
+    --box-shadow-1: rgba(0, 0, 0, 0.075) 0px 1px 3px,
+        rgba(0, 0, 0, 0.137) 0px 1px 2px;
+    /* DashBoard */
+    --color-dark-4: #222529;
+    --color-dark-5: #383b3e;
+    --color-dark-6: #ececee;
+    --color-light-3: #9ea0a6;
+    /* ---- */
+    --color-main-text:#002A56;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+    direction: rtl;
+    background-color: var( --color-light-2);
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.mainContainer {
+    width: 98%;
+    max-width: 130rem;
+    margin: auto;
+}
+
+@media (max-width: 77rem) {
+    html {
+        font-size: 50%;
+    }
 }
