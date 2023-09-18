@@ -72,6 +72,6 @@
         bottom: -10rem;
     }
     .img_3d_1 {
-        width: 10rem;
+        display: none;
     }
 }
