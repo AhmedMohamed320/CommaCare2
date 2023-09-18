@@ -33,6 +33,7 @@
 body {
     direction: rtl;
     background-color: var( --color-light-2);
+    overflow: hidden;
 }
 
 html {

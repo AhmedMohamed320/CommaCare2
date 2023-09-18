@@ -12,11 +12,14 @@ export default function Home() {
             </div>
             <div>
                 <div className={classes.background}></div>
-                <p>خدماتنا</p>
+                <div className={classes.title}>
+                    <p> خدماتنا لك</p>
+                    <img src="/image/hero-1.png" alt="" />
+                </div>
                 <div className={classes.service}>
-                    <Link href="">
+                    <Link href="/Online_medical_advice">
                         <img src="/image/service-1.svg" alt="" />
-                        <p>الاستشارات الطبيه</p>
+                        <p>استشاره طبيه اونلاين </p>
                     </Link>
                     <Link href="">
                         <img src="/image/service-1.svg" alt="" />

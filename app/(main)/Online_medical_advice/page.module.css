@@ -1,0 +1,76 @@
+.section{
+    height: 90vh;
+    margin-top: 10vh;
+    position: relative;
+}
+
+.title{
+    font-size: 2.5rem;
+    font-weight: 600;
+    padding: 2rem;
+    text-align: center;
+}
+
+.all{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.all>a{
+    min-width: 22rem;
+    box-shadow: var(--box-shadow-1);
+    border-radius: 0.5rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+    padding: 1.5rem 1rem;
+    background-color:var(--color-light-1) ;
+    transition: 0.2s;
+    position: relative;
+    overflow: hidden;
+}
+
+.all>a::before{
+    content: "";
+    width:0.5rem;
+    height:100%;
+    position: absolute;
+    background-color: var(--color-main-1);
+    right: 0;   
+    top: 0;
+}
+
+.all>a:hover{
+    background-color: var(--color-main-3);
+}
+
+.circle1{
+    position: absolute;
+    width: 50rem;
+    height: 50rem;
+    bottom: -20rem;
+    right: -20rem;
+    border-radius: 50%;
+    filter: blur(5rem);
+    background-color: var(--color-main-3);
+}
+
+.img_3d_1{
+    width: 15rem;
+    position: absolute;
+    bottom: 2rem;
+    left: 2rem;
+}
+
+
+@media (max-width: 50rem) {
+.circle1{
+    right: -10rem;
+    bottom: -10rem;
+}
+    .img_3d_1{
+        width: 10rem;
+    }
+    
+}
