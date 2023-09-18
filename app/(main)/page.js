@@ -41,14 +41,6 @@ export default function Home() {
                         <img src="/image/service-1.svg" alt="" />
                         <p>الاستشارات الطبيه</p>
                     </Link>{" "}
-                    <Link href="">
-                        <img src="/image/service-1.svg" alt="" />
-                        <p>الاستشارات الطبيه</p>
-                    </Link>{" "}
-                    <Link href="">
-                        <img src="/image/service-1.svg" alt="" />
-                        <p>الاستشارات الطبيه</p>
-                    </Link>
                 </div>
             </div>
         </section>

@@ -26,7 +26,7 @@
 }
 
 .list ul li {
-    color: var(--color-dark-3);
+    color: var(--color-dark-1);
     cursor: pointer;
     border-bottom: 2px solid transparent;
     padding: 0.5rem 0;
