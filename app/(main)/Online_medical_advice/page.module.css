@@ -49,28 +49,40 @@
     background-color: var(--color-main-3);
 }
 
-.circle1 {
+.circle1,
+.circle2 {
     position: absolute;
     width: 50rem;
     height: 50rem;
-    bottom: -20rem;
-    right: -20rem;
     border-radius: 50%;
     filter: blur(5rem);
     background-color: var(--color-main-3);
 }
 
+.circle1 {
+    bottom: -20rem;
+    right: -20rem;
+}
+.circle2 {
+    bottom: -20rem;
+    left: -20rem;
+    background-color: rgba(255, 230, 0, 0.233);
+}
+
 .img_3d_1 {
     width: 15rem;
     position: absolute;
-    bottom: 2rem;
-    left: 2rem;
+    bottom: 1rem;
+    left: 50%;
+    transform: translate(-50%);
 }
 
-@media (max-width: 50rem) {
+@media (max-width: 40rem) {
     .circle1 {
-        right: -10rem;
         bottom: -10rem;
+    }
+    .circle2 {
+        left: -30rem;
     }
     .img_3d_1 {
         display: none;

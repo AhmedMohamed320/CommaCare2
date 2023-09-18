@@ -7,6 +7,8 @@ const page = () => {
         <Fragment>
             <div className={classes.up}>
                 <div className={classes.circle1}></div>
+                <div className={classes.circle2}></div>
+
                 <section className={`mainContainer ${classes.section}`}>
                     <p className={classes.title}>حدد التخصص</p>
                     <div className={classes.all}>

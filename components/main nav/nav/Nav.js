@@ -3,6 +3,7 @@ import classes from "./Nav.module.css";
 import { TbLogin } from "react-icons/tb";
 import { BsListNested } from "react-icons/bs";
 import { FaUserCircle } from "react-icons/fa";
+import Link from "next/link";
 
 
 const Nav = (props) => {
@@ -12,9 +13,9 @@ const Nav = (props) => {
                 <div className={`md:hidden`}>
                     <BsListNested className="text-4xl cursor-pointer" onClick={props.onShowAside} />
                 </div>
-                <div className={classes.logo}>
+                <Link href="/" className={classes.logo}>
                     <img src="/image/mainLogo.png" alt="" />
-                </div>
+                </Link>
                 <div className={`hidden md:block ${classes.list}`}>
                     <ul className="flex items-center gap-10 text-2xl md">
                         <li>
