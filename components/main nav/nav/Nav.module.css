@@ -4,6 +4,7 @@
     background-color: var(--color-light-1);
     box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
     position: fixed;
+    z-index: 100;
     top: 0;
     width: 100%;
     display: flex;
