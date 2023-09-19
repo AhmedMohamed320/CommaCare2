@@ -1,7 +1,6 @@
 import React, { Fragment } from "react";
 import classes from "./page.module.css";
 import Link from "next/link";
-
 const page = () => {
     return (
         <Fragment>
@@ -12,7 +11,7 @@ const page = () => {
                 <section className={`mainContainer ${classes.section}`}>
                     <p className={classes.title}>حدد التخصص</p>
                     <div className={classes.all}>
-                        <Link href=""> الطب العام</Link>
+                        <Link href="/Online_medical_advice/1"> الطب العام</Link>
                         <Link href=""> الطب النفسي</Link>
                         <Link href=""> طب الاسرة</Link>
                         <Link href=""> الطب العام</Link>

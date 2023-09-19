@@ -23,11 +23,11 @@ export default function Home() {
                     </Link>
                     <Link href="">
                         <img src="/image/service-1.svg" alt="" />
-                        <p>الاستشارات الطبيه</p>
+                        <p>حجز كشف بالعياده</p>
                     </Link>{" "}
                     <Link href="">
                         <img src="/image/service-1.svg" alt="" />
-                        <p>الاستشارات الطبيه</p>
+                        <p> استشاره صيدلي اونلاين</p>
                     </Link>{" "}
                     <Link href="">
                         <img src="/image/service-1.svg" alt="" />

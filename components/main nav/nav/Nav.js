@@ -19,7 +19,7 @@ const Nav = (props) => {
                 <div className={`hidden md:block ${classes.list}`}>
                     <ul className="flex items-center gap-10 text-2xl md">
                         <li>
-                            <p>الرئيسيه</p>
+                            <Link href="/">الرئيسيه</Link>
                         </li>
                         <li>
                             <p>من نحن</p>
