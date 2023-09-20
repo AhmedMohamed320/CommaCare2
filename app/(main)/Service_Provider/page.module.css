@@ -1,0 +1,112 @@
+.section{
+    margin-top: 10vh;
+    height: 90vh;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+}
+
+.up {
+    position: relative;
+    overflow: hidden;
+}
+
+.section > p:nth-of-type(1){
+    max-width: 65rem;
+    font-size: 4rem;
+}
+
+.section > p:nth-of-type(2){
+    font-size: 1.8rem;
+}
+
+.section >  p {
+    opacity: 0;
+    animation: animation-1 1s linear forwards;
+}
+
+@keyframes animation-1 {
+    0% {
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.form{
+    box-shadow: var(--box-shadow-1);
+    border-radius: 1rem;
+    width: 95%;
+    max-width: 50rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    background-color: var(--color-main-3);
+    padding: 1rem;
+    position: relative;
+}
+
+.form >div{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1rem;
+}
+
+.form >div>div{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.form >div>div label{
+    font-size: 1.4rem;
+    color:var(--color-dark-5)
+}
+.form >div>div input,.form >div>div select{
+    outline: none;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--color-dark-2);
+    color: var(--color-dark-5);
+}
+
+.form button{
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    background-color: var(--color-main-2);
+    color: var(--color-light-1);
+    border-radius: 0.5rem;
+}
+
+.circle1,
+.circle2 {
+    position: absolute;
+    width: 50rem;
+    height: 50rem;
+    border-radius: 50%;
+    filter: blur(5rem);
+    background-color: var(--color-main-3);
+}
+
+.circle1 {
+    bottom: -20rem;
+    right: -20rem;
+}
+
+.circle2 {
+    bottom: 20rem;
+    left: -20rem;
+    z-index: -1;
+}
+
+.image3d{
+    position: absolute;
+    width: 13rem;
+    bottom:  20rem;
+    right: -20rem;
+}

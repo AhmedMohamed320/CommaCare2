@@ -25,7 +25,7 @@ const Nav = (props) => {
                             <p>من نحن</p>
                         </li>
                         <li>
-                            <p>انضم كمقدم خدمه</p>
+                            <Link href="/Service_Provider">انضم كمقدم خدمه</Link>
                         </li>
                         <li>
                             <p>تواصل معانا</p>
