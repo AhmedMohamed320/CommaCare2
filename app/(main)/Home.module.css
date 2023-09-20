@@ -1,7 +1,7 @@
 .section {
     background-color: var(--color-light-2);
-    height: 90vh;
-    margin-top: 10vh;
+    height: 90svh;
+    margin-top: 10svh;
 }
 
 .section > div:nth-of-type(1) {
