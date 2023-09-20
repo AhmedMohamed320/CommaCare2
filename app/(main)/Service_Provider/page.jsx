@@ -6,14 +6,12 @@ const page = () => {
             <div className={classes.up}>
                 <div className={classes.circle1}></div>
                 <div className={classes.circle2}></div>
-
                 <section className={classes.section}>
                     <p className="font-semibold p-6 text-center">
                         نعمل معا على تحسين إمكانية الوصول إلى الخدمات الطبية من
                         خلال تبني أساليب جديدة ومرنة.
                     </p>
                     <p>للانضمام لنا قم بارسال معلوماتك وسنقوم بالتواصل معك</p>
-
                     <form action="" className={classes.form}>
                         <section className={`md:block hidden ${classes.image3d}`}>
                             <img src="/image/3d-2.png" alt="" />
