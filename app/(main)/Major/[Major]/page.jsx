@@ -47,7 +47,14 @@ const page = () => {
                                 <img src="/image/doc.jpeg" alt="" />
                             </div>
                         </div>
-                        <button className="w-full p-4 text-2xl">تاكيد</button>
+                        <button
+                            className="w-full p-4 text-2xl"
+                            onClick={() => {
+                                setShowPop(false);
+                            }}
+                        >
+                            تاكيد
+                        </button>
                     </div>
                 </div>
             )}
