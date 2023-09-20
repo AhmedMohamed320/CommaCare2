@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>caregiver</title>
+    <defs>
+        <polygon id="path-1" points="0 24 24 24 24 0 0 0"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home" transform="translate(-30.000000, -450.000000)">
+            <g id="caregiver" transform="translate(30.000000, 450.000000)">
+                <g id="g1777-Clipped" transform="translate(12.000000, 12.000000) scale(-1, 1) rotate(-180.000000) translate(-12.000000, -12.000000) ">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="path1779"></g>
+                    <g id="g1777" mask="url(#mask-2)">
+                        <g transform="translate(0.468750, 3.198440)">
+                            <g id="g1783" stroke="none" stroke-width="1" fill-rule="evenodd" transform="translate(10.891453, 5.493760)">
+                                <path d="M12.6397969,6.28907812 C12.6397969,2.81573437 9.81028125,0 6.31992188,0 C2.82951562,0 0,2.81573437 0,6.28907812 C0,9.76242187 2.82951562,12.5781562 6.31992188,12.5781562 C9.81028125,12.5781562 12.6397969,9.76242187 12.6397969,6.28907812" id="path1785" fill="#B2F0FB" fill-rule="nonzero"></path>
+                            </g>
+                            <g id="g1787" stroke="none" stroke-width="1" fill-rule="evenodd" transform="translate(14.288067, 8.859854)" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M5.84653125,3.99417187 L3.99454687,3.99417187 L3.99454687,5.84596875 L1.85203125,5.84596875 C1.85203125,5.84596875 1.85198437,5.84596875 1.85198437,5.84596875 L1.85198437,3.99417187 L0,3.99417187 C0,3.99417187 0,3.99417187 0,3.994125 L0,1.85179687 L1.85198437,1.85179687 L1.85198437,0 L3.9945,0 C3.9945,0 3.99454687,0 3.99454687,0 L3.99454687,1.85179687 L5.84653125,1.85179687 C5.84653125,1.85179687 5.84653125,1.85179687 5.84653125,1.85179687 L5.84653125,3.99417187 Z" id="path1789" stroke="#26A9E0" stroke-width="0.9375"></path>
+                            </g>
+                            <g id="g1791" stroke="none" stroke-width="1" fill-rule="evenodd" transform="translate(12.854967, 1.909004)" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M0,1.74745312 L4.0134375,1.74745312 C4.54195313,1.74745312 4.97039062,1.32135937 4.97039062,0.79565625 C4.97039062,0.790640625 4.96982812,0.76321875 4.96982812,0.7625625 C4.95885937,0.443625 4.79010937,0.164484375 4.5388125,0" id="path1793" stroke="#26A9E0" stroke-width="0.9375"></path>
+                            </g>
+                            <g id="g1795" stroke="none" stroke-width="1" fill-rule="evenodd" transform="translate(8.977064, 1.849266)" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M0,2.10830642 L2.31070313,0.301415795 C2.62767188,0.0568220449 2.90976563,-0.0343029551 3.22382813,0.0113532949 C3.22776563,0.0119157949 3.39421875,0.0500720449 3.39820313,0.0506814199" id="path1797" stroke="#26A9E0" stroke-width="0.9375"></path>
+                            </g>
+                            <g id="g1799" stroke="none" stroke-width="1" fill-rule="evenodd" transform="translate(3.453295, 0.000000)" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M15.1593281,0.994125998 C15.1350937,1.50604787 14.6917031,1.8999385 14.1763594,1.8999385 L8.911875,1.8999385 L8.91051562,1.90246975 C9.0545625,1.95229787 9.18984375,2.034001 9.30520312,2.14753225 C9.30848437,2.15071975 9.38203125,2.23167287 9.38221875,2.23195412 C9.72182812,2.64679787 9.69459375,3.258376 9.30365625,3.64139162 C9.30365625,3.64139162 4.42110937,7.88123537 3.64851562,7.88123537 L0,7.88123537 L0,4.11721975 L0.38634375,4.11721975 C1.39551563,4.11721975 1.8954375,3.62034475 2.46065625,2.78878225 C3.27871875,1.58498537 4.45565625,-0.00145212746 4.97554688,0 C6.57060938,0.00440724754 13.2450937,0.0112041225 14.3727656,0.0112041225 C14.842125,0.0112041225 15.1824375,0.505641623 15.1593281,0.994125998 Z" id="path1801" stroke="#26A9E0" stroke-width="0.9375"></path>
+                            </g>
+                            <polygon id="path1803" stroke="#26A9E0" stroke-width="0.9375" stroke-linecap="round" stroke-linejoin="round" points="3.4539375 3.69316975 0 3.69316975 0 8.27974787 3.4539375 8.27974787"></polygon>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

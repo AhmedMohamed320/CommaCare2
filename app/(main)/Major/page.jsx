@@ -11,7 +11,7 @@ const page = () => {
                 <section className={`mainContainer ${classes.section}`}>
                     <p className={classes.title}>حدد التخصص</p>
                     <div className={classes.all}>
-                        <Link href="/Online_medical_advice/1"> الطب العام</Link>
+                        <Link href="/Major/1"> الطب العام</Link>
                         <Link href=""> الطب النفسي</Link>
                         <Link href=""> طب الاسرة</Link>
                         <Link href=""> الطب العام</Link>
