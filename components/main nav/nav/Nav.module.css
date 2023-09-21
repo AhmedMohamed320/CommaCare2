@@ -16,9 +16,14 @@
     align-items: center;
     justify-content: space-between;
 }
-
+.logo {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .logo img {
-    width: 12rem;
+    height: 95%;
 }
 
 .list {

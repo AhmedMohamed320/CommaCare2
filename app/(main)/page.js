@@ -21,12 +21,13 @@ export default function Home() {
                         <BsFileEarmarkPerson  />
                     </Link>
                 </div>
+                <img src="/image/hero-1.png" alt="" className="md:block hidden" />
+                <img src="/image/hero-2.png" alt="" className="md:block hidden" />
             </div>
             <div>
                 <div className={classes.background}></div>
                 <div className={classes.title}>
                     <p>مميزاتنا</p>
-                    <img src="/image/hero-1.png" alt="" />
                 </div>
                 <div className={classes.service}>
                     <div>
