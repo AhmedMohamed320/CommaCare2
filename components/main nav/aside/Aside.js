@@ -63,7 +63,8 @@ const Aside = (props) => {
                         </Link>
                     </li>
                 </ul>
-                <div className="flex items-center justify-between p-8 gap-4 bg-red-500 text-white cursor-pointer">
+                <span className={classes.hr}></span>
+                <div className="flex items-center  px-10  gap-4 cursor-pointer font-semibold">
                     <p>تسجيل الخروج</p>
                     <GoSignIn className="text-4xl" />
                 </div>

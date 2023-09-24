@@ -12,8 +12,8 @@
     height: 100vh;
     background-color: var(--color-light-1);
     font-size: 2rem;
-    display: grid;
-    grid-template-rows: 1fr 20fr;
+    display: flex;
+    flex-direction: column;
     gap: 2rem;
 }
 
@@ -56,8 +56,8 @@
 
 .aside ul > li .border {
     background-color: transparent;
-    width: 0.7rem;
-    height: 3.5rem;
+    width: 0.8rem;
+    height: 4rem;
     border-top-left-radius: 1rem;
     border-bottom-left-radius: 1rem;
 }
@@ -71,4 +71,12 @@
     align-items: center;
     gap: 1rem;
     padding: 1rem;
+}
+
+span.hr{
+    width: 85%;
+    height: 1px;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.137);
+    margin: 0 auto;
 }
