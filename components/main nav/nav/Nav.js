@@ -1,43 +1,61 @@
-import React from "react";
+import React, { useState } from "react";
 import classes from "./Nav.module.css";
 import { TbLogin } from "react-icons/tb";
-import { BsListNested } from "react-icons/bs";
-import { FaUserCircle } from "react-icons/fa";
+import { BsListNested, BsPerson } from "react-icons/bs";
 import Link from "next/link";
 
-
 const Nav = (props) => {
+    const [showComponent, setShowComponent] = useState(false);
+    const handleMouseEnter = () => {
+        setShowComponent(true);
+    };
+    const handleMouseLeave = () => {
+        setShowComponent(false);
+    };
+
     return (
         <section className={classes.section}>
             <div className="mainContainer">
-                <div className={`md:hidden`}>
-                    <BsListNested className="text-4xl cursor-pointer" onClick={props.onShowAside} />
-                </div>
                 <Link href="/" className={classes.logo}>
                     <img src="/image/mainLogo.png" alt="" />
                 </Link>
+                <div className={`md:hidden`}>
+                    <BsListNested
+                        className="text-5xl cursor-pointer"
+                        onClick={props.onShowAside}
+                    />
+                </div>
                 <div className={`hidden md:block ${classes.list}`}>
                     <ul className="flex items-center gap-10 text-2xl md">
                         <li>
-                            <Link href="/">الرئيسيه</Link>
+                            <Link href="/">
+                                <p>الرئيسيه</p>
+                            </Link>
                         </li>
                         <li>
-                            <p>من نحن</p>
+                            <Link href="">
+                                <p>من نحن</p>
+                            </Link>
                         </li>
                         <li>
-                            <Link href="/Service_Provider">انضم كمقدم خدمه</Link>
-                        </li>
-                        <li>
-                            <p>تواصل معانا</p>
+                            <Link href="/Service_Provider">
+                                <p>انضم كمقدم خدمه</p>
+                            </Link>
                         </li>
                     </ul>
                 </div>
-                <div>
-                    <button className="md:flex hidden items-center gap-3 text-2xl">
-                        <p> تسجيل الدخول</p>
+                <div className={`md:flex hidden gap-4 ${classes.btn}`}>
+                    <Link
+                        href="/account"
+                        className="flex  items-center gap-3 text-2xl "
+                    >
+                        <p>حسابي</p>
+                        <BsPerson className="text-3xl" />
+                    </Link>
+                    <Link href="" className="flex  items-center gap-3 text-2xl">
+                        <p> تسجيل الخروج</p>
                         <TbLogin className="text-3xl" />
-                    </button>
-                    <FaUserCircle className="md:hidden text-4xl cursor-pointer" />
+                    </Link>
                 </div>
             </div>
         </section>

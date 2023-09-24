@@ -1,7 +1,13 @@
 import React, { Fragment, useState } from "react";
 import classes from "./Aside.module.css";
-import { MdOutlineClose } from "react-icons/md";
+import { MdFavorite, MdOutlineClose } from "react-icons/md";
 import Link from "next/link";
+import {
+    BsFillBookmarkFill,
+    BsFillPersonVcardFill,
+    BsPersonFill,
+} from "react-icons/bs";
+import { GoSignIn } from "react-icons/go";
 
 const Aside = (props) => {
     return (
@@ -11,24 +17,56 @@ const Aside = (props) => {
                     <MdOutlineClose />
                 </div>
                 <div className={classes.head}>
-                    <div>
-                        <p>تسجيل الخروج</p>
-                        <p>تسجيل الدخول</p>
-                    </div>
+                    <Link href="/" className={classes.logo}>
+                        <img src="/image/mainLogo.png" alt="" />
+                    </Link>
                 </div>
-                <ul>
+                <ul className="flex gap-8 flex-col">
+                    <li className={classes.active}>
+                        <span className={classes.border}></span>
+                        <Link
+                            href=""
+                            // onClick={props.onHideAside}
+                        >
+                            <BsPersonFill />
+                            حسابي
+                        </Link>
+                    </li>
                     <li>
-                        <div>
-                            <Link
-                                href=""
-                                className={classes.offer}
-                                onClick={props.onHideAside}
-                            >
-                                العروض
-                            </Link>
-                        </div>
+                        <span className={classes.border}></span>
+                        <Link
+                            href=""
+                            // onClick={props.onHideAside}
+                        >
+                            <BsFillPersonVcardFill />
+                            ملفي الطبي
+                        </Link>
+                    </li>
+                    <li>
+                        <span className={classes.border}></span>
+                        <Link
+                            href=""
+                            // onClick={props.onHideAside}
+                        >
+                            <BsFillBookmarkFill />
+                            حجوزاتي
+                        </Link>
+                    </li>
+                    <li>
+                        <span className={classes.border}></span>
+                        <Link
+                            href=""
+                            // onClick={props.onHideAside}
+                        >
+                            <MdFavorite />
+                            المفضله
+                        </Link>
                     </li>
                 </ul>
+                <div className="flex items-center justify-between p-8 gap-4 bg-red-500 text-white cursor-pointer">
+                    <p>تسجيل الخروج</p>
+                    <GoSignIn className="text-4xl" />
+                </div>
             </aside>
         </section>
     );

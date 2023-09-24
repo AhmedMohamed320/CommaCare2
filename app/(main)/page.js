@@ -16,13 +16,26 @@ export default function Home() {
                         <p>احجز كشفك الان</p>
                         <AiOutlineFieldTime className="text-3xl" />
                     </Link>
-                    <Link href="">
-                        <p>سجل ملفك الطبي</p>
-                        <BsFileEarmarkPerson  />
+                    <Link
+                        href={{
+                            pathname: "/account",
+                            query: { content: "Medical_profile" },
+                        }}
+                    >
+                        <p> ملفك الطبي</p>
+                        <BsFileEarmarkPerson />
                     </Link>
                 </div>
-                <img src="/image/hero-1.png" alt="" className="md:block hidden" />
-                <img src="/image/hero-2.png" alt="" className="md:block hidden" />
+                <img
+                    src="/image/hero-1.png"
+                    alt=""
+                    className="md:block hidden"
+                />
+                <img
+                    src="/image/hero-2.png"
+                    alt=""
+                    className="md:block hidden"
+                />
             </div>
             <div>
                 <div className={classes.background}></div>
