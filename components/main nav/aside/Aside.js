@@ -1,4 +1,5 @@
-import React, { Fragment, useState } from "react";
+"use client";
+import React from "react";
 import classes from "./Aside.module.css";
 import { MdFavorite, MdOutlineClose } from "react-icons/md";
 import Link from "next/link";
@@ -8,8 +9,11 @@ import {
     BsPersonFill,
 } from "react-icons/bs";
 import { GoSignIn } from "react-icons/go";
+import { useSearchParams } from "next/navigation";
 
 const Aside = (props) => {
+    const router = useSearchParams();
+    const content = router.get("content") || "info";
     return (
         <section className={classes.section}>
             <aside className={classes.aside}>
@@ -22,44 +26,60 @@ const Aside = (props) => {
                     </Link>
                 </div>
                 <ul className="flex gap-8 flex-col">
-                    <li className={classes.active}>
+                    <li className={content == "info" && classes.active}>
                         <span className={classes.border}></span>
                         <Link
-                            href=""
-                            // onClick={props.onHideAside}
+                            href={{
+                                pathname: "/account",
+                                query: { content: "info" },
+                            }}
+                            onClick={props.onHideAside}
                         >
                             <BsPersonFill />
                             حسابي
                         </Link>
                     </li>
-                    <li>
+                    <li
+                        className={
+                            content == "Medical_profile" && classes.active
+                        }
+                    >
                         <span className={classes.border}></span>
                         <Link
-                            href=""
-                            // onClick={props.onHideAside}
+                            href={{
+                                pathname: "/account",
+                                query: { content: "Medical_profile" },
+                            }}
+                            onClick={props.onHideAside}
                         >
                             <BsFillPersonVcardFill />
                             ملفي الطبي
                         </Link>
                     </li>
-                    <li>
+                    <li className={content == "My_booking" && classes.active}>
                         <span className={classes.border}></span>
                         <Link
-                            href=""
-                            // onClick={props.onHideAside}
+                            href={{
+                                pathname: "/account",
+                                query: { content: "My_booking" },
+                            }}
+                            onClick={props.onHideAside}
                         >
                             <BsFillBookmarkFill />
                             حجوزاتي
                         </Link>
                     </li>
-                    <li>
+                    <li className={content == "Doctory" && classes.active}>
                         <span className={classes.border}></span>
                         <Link
-                            href=""
-                            // onClick={props.onHideAside}
+                            href={{
+                                pathname: "/account",
+                                query: { content: "Doctory" },
+                            }}
+                            onClick={props.onHideAside}
                         >
                             <MdFavorite />
-                            المفضله
+                            دكتوري
                         </Link>
                     </li>
                 </ul>
