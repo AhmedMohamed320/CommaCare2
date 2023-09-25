@@ -102,6 +102,7 @@
     bottom: 20rem;
     left: -20rem;
     z-index: -1;
+    background-color: #ffc86369;
 }
 
 .image3d{

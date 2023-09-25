@@ -21,15 +21,34 @@ export default function Home() {
                                 <p>احجز كشفك الان</p>
                                 <AiOutlineFieldTime className="text-3xl" />
                             </Link>
-                            <Link
-                                href={{
-                                    pathname: "/account",
-                                    query: { content: "Medical_profile" },
-                                }}
+                            <div
+                                
+                                className={classes.numUser}
                             >
-                                <p> ملفك الطبي</p>
-                                <BsFileEarmarkPerson />
-                            </Link>
+                                <p>+٥٠٠   دكتور موجود معانا  </p>
+                                <div>
+                                    <ul className="flex">
+                                        <li>
+                                            <img
+                                                src="/image/service-1.png"
+                                                alt=""
+                                            />
+                                        </li>
+                                        <li>
+                                            <img
+                                                src="/image/service-1.png"
+                                                alt=""
+                                            />
+                                        </li>
+                                        <li>
+                                            <img
+                                                src="/image/service-1.png"
+                                                alt=""
+                                            />
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                         <img
                             src="/image/hero-1.png"

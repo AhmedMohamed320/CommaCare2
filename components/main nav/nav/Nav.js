@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import classes from "./Nav.module.css";
 import { TbLogin } from "react-icons/tb";
-import { BsListNested, BsPerson } from "react-icons/bs";
+import { BsListNested, BsPerson, BsSearch } from "react-icons/bs";
 import Link from "next/link";
 
 const Nav = (props) => {
@@ -43,6 +43,10 @@ const Nav = (props) => {
                             </Link>
                         </li>
                     </ul>
+                </div>
+                <div className={classes.search}>
+                    <input type="text" name="" id="" />
+                    <BsSearch />
                 </div>
                 <div className={`md:flex hidden gap-4 ${classes.btn}`}>
                     <Link
