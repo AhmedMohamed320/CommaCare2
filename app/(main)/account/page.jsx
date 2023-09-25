@@ -4,6 +4,7 @@ import classes from "./page.module.css";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import { BsPerson } from "react-icons/bs";
+import Doctory from "@/components/userAccount/doctory/Doctory";
 
 const page = () => {
     const router = useSearchParams();
@@ -70,7 +71,13 @@ const page = () => {
                     </li>{" "}
                 </ul>
             </div>
-            <div className={classes.content}></div>
+            <div className={classes.content}>
+            {
+                content == "Doctory" &&(
+                    <Doctory/>
+                )
+            }
+            </div>
         </section>
     );
 };

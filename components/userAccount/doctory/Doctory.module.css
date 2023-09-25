@@ -1,0 +1,87 @@
+.upList {
+    border-right: 2px solid var(--color-main-1);
+    padding: 2rem;
+}
+
+.major {
+    position: relative;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.major::before {
+    position: absolute;
+    content: "";
+    width: 2rem;
+    height: 2rem;
+    background-color: var(--color-light-1);
+    border-radius: 50%;
+    border: 2px solid var(--color-main-1);
+    right: calc(-3rem - 1px);
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.docList {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem 1rem; 
+}
+
+.docList li {
+    display: flex;
+    gap: 1rem;
+    font-size: 1.5rem;
+    color: var(--color-dark-5);
+    background-color: var(--color-main-3);
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.docList li .name {
+    color: var(--color-main-1);
+    font-weight: 600;
+}
+
+.docList li > div:nth-of-type(1) {
+    width: 10rem;
+    height: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.docList li > div:nth-of-type(1) img {
+    width: 90%;
+    border-radius: 1rem;
+}
+
+.docList li > div:nth-of-type(2){
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+} 
+
+.docList li > div:nth-of-type(2) p span{
+    color: var(--color-main-1);
+    font-weight: 600;
+}
+
+.docList li > div:nth-of-type(2) input{
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--color-dark-2);
+    border-radius: 0.5rem;
+    outline: none;
+    font-size: 1.2rem;
+}
+
+@media (max-width:30rem) {
+    .upList{
+        padding: 2rem 2rem 2rem 0rem;
+    }
+    .docList{
+        padding: 2rem 0rem  ;
+    }
+    
+}
