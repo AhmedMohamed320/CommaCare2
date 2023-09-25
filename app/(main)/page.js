@@ -19,7 +19,7 @@ export default function Home() {
                         <div className={classes.btn}>
                             <Link href="/Major">
                                 <p>احجز كشفك الان</p>
-                                <AiOutlineFieldTime className="text-3xl" />
+                                <AiOutlineFieldTime className="text-4xl" />
                             </Link>
                             <div
                                 

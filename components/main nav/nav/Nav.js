@@ -19,12 +19,7 @@ const Nav = (props) => {
                 <Link href="/" className={classes.logo}>
                     <img src="/image/mainLogo.png" alt="" />
                 </Link>
-                <div className={`md:hidden`}>
-                    <BsListNested
-                        className="text-5xl cursor-pointer"
-                        onClick={props.onShowAside}
-                    />
-                </div>
+
                 <div className={`hidden md:block ${classes.list}`}>
                     <ul className="flex items-center gap-10 text-2xl md">
                         <li>
@@ -60,6 +55,12 @@ const Nav = (props) => {
                         <p> تسجيل الخروج</p>
                         <TbLogin className="text-3xl" />
                     </Link>
+                </div>
+                <div className={`md:hidden`}>
+                    <BsListNested
+                        className="text-5xl cursor-pointer"
+                        onClick={props.onShowAside}
+                    />
                 </div>
             </div>
         </section>
