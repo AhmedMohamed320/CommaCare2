@@ -1,0 +1,43 @@
+.section {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    font-size: 1.5rem;
+    background-color: var(--color-main-3);
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.form > div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form > div label {
+    font-weight: 600;
+}
+
+.form > div input,
+.form > div select {
+    outline: none;
+    border: none;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.confirm {
+    padding: 1rem 2rem;
+    background-color: var(--color-main-1);
+    color: var(--color-light-2);
+    font-size: 1.5rem;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+}

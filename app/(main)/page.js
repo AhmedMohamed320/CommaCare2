@@ -1,7 +1,6 @@
 import Link from "next/link";
 import classes from "./Home.module.css";
 import { AiOutlineFieldTime } from "react-icons/ai";
-import { BsFileEarmarkPerson } from "react-icons/bs";
 import { Fragment } from "react";
 export default function Home() {
     return (
@@ -61,7 +60,7 @@ export default function Home() {
                             className="md:block hidden"
                         />
                     </div>
-                    <div>
+                    <div className="md:justify-center justify-start">
                         <div className={classes.title}>
                             <p>مميزاتنا</p>
                         </div>

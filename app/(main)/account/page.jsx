@@ -72,11 +72,31 @@ const page = () => {
                 </ul>
             </div>
             <div className={classes.content}>
-            {
-                content == "Doctory" &&(
-                    <Doctory/>
-                )
-            }
+                {content == "Doctory" && <Doctory />}
+                {content == "Medical_profile" && (
+                    <div className={classes.Medical_profile}>
+                        <div>
+                            <ul>
+                                <li>
+                                    <Link href="/account/family_tree">
+                                        <p>بيانات العائله الطبيه</p>
+                                        <img src="/image/family.png" alt="" />
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link href="/account/Medical_examination_results">
+                                        <p>نتائج الكشوفات</p>
+                                        <img
+                                            src="/image/hero-1.png"
+                                            alt=""
+                                            className={classes.img2}
+                                        />
+                                    </Link>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                )}
             </div>
         </section>
     );

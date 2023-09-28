@@ -51,7 +51,7 @@ const Nav = (props) => {
                         <p>حسابي</p>
                         <BsPerson className="text-3xl" />
                     </Link>
-                    <Link href="" className="flex  items-center gap-3 text-2xl">
+                    <Link href="/sign_in" className="flex  items-center gap-3 text-2xl">
                         <p> تسجيل الخروج</p>
                         <TbLogin className="text-3xl" />
                     </Link>

@@ -6,7 +6,8 @@
     padding: 2rem 1rem;
 }
 
-.list ,.content {
+.list,
+.content {
     padding: 2rem;
     background-color: var(--color-light-1);
     border-radius: 1rem;
@@ -61,6 +62,46 @@
 
 /* ----------- */
 
+.Medical_profile,
+.Medical_profile > div:nth-of-type(1) {
+    height: 100%;
+}
+.Medical_profile > div:nth-of-type(1) ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    height: 100%;
+}
+
+.Medical_profile > div:nth-of-type(1) ul li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    color: var(--color-dark-5);
+    border: 1px solid var(--color-main-1);
+    background-color: var(--color-main-3);
+    border-radius: 0.5rem;
+    font-size: 2rem;
+    font-weight: 600;
+    position: relative;
+}
+
+.Medical_profile > div:nth-of-type(1) ul li a img {
+    width: 18rem;
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+}
+
+.Medical_profile > div:nth-of-type(1) ul li a img.img2 {
+    width: 10rem;
+}
+
+/* -------------- */
+
 @media (max-width: 60rem) {
     .section {
         display: grid;
@@ -75,6 +116,17 @@
         gap: 0;
     }
     .list ul li a .icon {
+        display: none;
+    }
+
+    .Medical_profile {
+        height: 25vh;
+    }
+
+}
+
+@media (max-width: 40rem) {
+    .Medical_profile > div:nth-of-type(1) ul li a img {
         display: none;
     }
 }
