@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import classes from "./Nav.module.css";
 import { TbLogin } from "react-icons/tb";
 import { BsListNested, BsPerson, BsSearch } from "react-icons/bs";
@@ -13,8 +13,25 @@ const Nav = (props) => {
         setShowComponent(false);
     };
 
+    const [isFixed, setIsFixed] = useState(false);
+    useEffect(() => {
+        const handleScroll = () => {
+            const scrollY = window.scrollY;
+            setIsFixed(scrollY > 10);
+        };
+
+        window.addEventListener("scroll", handleScroll);
+
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
+    const navClass = `${classes.section}  ${
+        isFixed ? `${classes.onScroll}` : ""
+    }`;
+
     return (
-        <section className={classes.section}>
+        <section className={navClass}>
             <div className="mainContainer">
                 <Link href="/" className={classes.logo}>
                     <img src="/image/mainLogo.png" alt="" />

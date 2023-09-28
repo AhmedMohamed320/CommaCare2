@@ -9,6 +9,10 @@
     align-items: center;
 }
 
+.section.onScroll{
+    background-color: var(--color-light-1);
+}
+
 .section > div:nth-of-type(1) {
     display: flex;
     align-items: center;
